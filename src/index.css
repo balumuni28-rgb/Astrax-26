@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Orbitron', -apple-system, sans-serif;
+    --font-serif: 'Cinzel', serif;
+    --font-tech: 'Rajdhani', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+  }
+}
+
+.font-heading {
+  font-family: 'Orbitron', -apple-system, sans-serif;
+}
+
+.font-serif-royal {
+  font-family: 'Cinzel', serif;
+}
+
+.font-tech {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* Background requested: red wine color in center and cream at ends with golden border */
+.theme-wine-cream-bg {
+  background: radial-gradient(circle at 50% 35%, #500714 0%, #3b050f 40%, #7d1020 65%, #ebdcc2 88%, #f8f3e8 100%);
+  background-attachment: fixed;
+}
+
+.theme-wine-cream-card {
+  background: radial-gradient(ellipse at center, rgba(82, 10, 24, 0.95) 0%, rgba(54, 6, 15, 0.98) 70%, rgba(35, 4, 10, 0.99) 100%);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fff3b0 0%, #ffd700 35%, #d4af37 65%, #aa7c11 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-lux {
+  border: 3px solid #d4af37;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.35), inset 0 0 15px rgba(212, 175, 55, 0.15);
+}
+
+.gold-border-double {
+  border: 4px double #d4af37;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+.golden-frame-outer {
+  border: 6px double #d4af37;
+  outline: 2px solid rgba(255, 215, 0, 0.5);
+  outline-offset: -10px;
+}
